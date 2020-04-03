@@ -1,0 +1,9 @@
+	// 显示消息提示框
+	await(() => {
+		const title = '$1';	// 提示的内容
+		const icon = '${2|success,loading,none|}';	// 图标
+		const duration = ${3:undefined};	// 提示的延迟时间
+		const image = ${4:undefined};	// 自定义图标的本地路径，image 的优先级高于 icon
+		const mask = ${5|true,false|};	// 是否显示透明蒙层，防止触摸穿透
+		return awx9(title, icon, duration, image, mask);
+	})();
